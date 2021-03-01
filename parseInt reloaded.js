@@ -1,3 +1,4 @@
+function parseInt(string) {
 var words = {
   zero: 0,
   one: 1,
@@ -41,10 +42,11 @@ function parseInt(str) {
       value += mult[word] * (value % mult[word]) - (value % mult[word]);
     return value;
   }, 0);
-}
+}}
+
 console.log(parseInt("two hundred forty-six"));
 
-// ******************** Solution 2 *********************
+/* ******************** Solution 2 *********************
 
 function parseInt(string) {
   var map = {
@@ -106,4 +108,4 @@ function parseInt(string) {
     }
   });
   return result + result2;
-}
+} */
